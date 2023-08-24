@@ -40,7 +40,7 @@ function PokemonList() {
 
       {allPokemon.map((eachPokemon) => {
         return (
-          <li>
+          <li key={eachPokemon.name}>
             <Link to={`/poke/${eachPokemon.name}`}>{eachPokemon.name}</Link>
           </li>
         )
